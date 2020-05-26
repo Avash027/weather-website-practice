@@ -22,9 +22,9 @@ weatherform.addEventListener('submit',(e)=>{
  
 const fetchFunction=function(locationName){
     
-    const FetchUrl='http://localhost:9000/weather?address='+locationName
-fetch(FetchUrl).then((response)=>{
-    response.json().then((data)=>{
+    const FetchUrl='/weather?address='+locationName
+    fetch(FetchUrl).then((response)=>{
+        response.json().then((data)=>{
         if(data.error){
         messageOne.textContent=''
         messageTwo.textContent='error : '+data.error
