@@ -9,14 +9,18 @@ request({url,json:true},(error,{body})=>{
          
      
      } else {
-        console.log(lat+"   "+long)
+        try{
          callback(undefined, {temperature:' It is currently  ' + body.current.temperature + ' degress celsius out.',
         location:body.location.name,
         time:'Weather was last checked at '+body.current.observation_time,
         description:body.current.weather_descriptions[0]
     })
     
-
+        }
+        catch(e)
+        {
+            callback('Unable to find the location' , undefined)
+        }
 
 
 
