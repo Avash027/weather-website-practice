@@ -33,6 +33,7 @@ const fetchFunction=function(locationName){
         messageFive.textContent=''
         }
         else{
+            messageTwo.textContent=''
         messageOne.textContent=data.temperature
         messageThree.textContent='Location : '+data.location
         messageFour.textContent=data.time
