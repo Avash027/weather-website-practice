@@ -5,7 +5,7 @@
 
 It uses two APIs to get data about the current weather conditions of the location
 
-##Programming Languages used
+## Programming Languages used
 
 1. Vanilla Javascript
 2. HTML
